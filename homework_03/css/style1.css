@@ -1,0 +1,79 @@
+body {
+  background: #dcbb9a;
+  color: #000000; }
+  body #content {
+    width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px; }
+    body #content h1 {
+      text-transform: none;
+      color: #893c00;
+      text-align: center; }
+    body #content h2 {
+      color: #893c00; }
+    body #content .img-left {
+      float: left;
+      margin: 0px 20px 10px 0px;
+      border: 2px solid #893c00;
+      padding: 2px; }
+    body #content .brief {
+      margin: 0px 20px 10px 0px;
+      padding: 20px;
+      background-color: #fadcba;
+      color: #000000;
+      float: left;
+      width: 380px; }
+    body #content .img-right {
+      float: right;
+      margin: 0px 0px 5px 20px;
+      border: 2px solid #893c00;
+      padding: 2px; }
+    body #content a:link {
+      color: #3d70a1; }
+    body #content table {
+      width: 900px;
+      height: 315px;
+      background: #ffffff; }
+      body #content table caption {
+        text-align: right;
+        color: #000000; }
+      body #content table th {
+        text-transform: uppercase;
+        text-align: left;
+        font-style: normal;
+        padding: 10px 15px;
+        background: #e0e0e0;
+        color: #000000; }
+      body #content table tr {
+        padding: 10px 15px;
+        text-indent: 20px;
+        border-color: #ffffff;
+        border-bottom: 5px solid #ffffff; }
+    body #content .form {
+      color: #808080; }
+      body #content .form .text_field {
+        display: inline-block; }
+        body #content .form .text_field span {
+          display: block;
+          margin-bottom: 5px; }
+      body #content .form p {
+        margin-top: 20px;
+        margin-bottom: 5px; }
+      body #content .form input[type="email"] {
+        border: 1px solid #e0e0e0;
+        padding: 5px; }
+      body #content .form input[type="text"] {
+        padding: 5px; }
+      body #content .form textarea {
+        color: #808080;
+        padding: 5px; }
+      body #content .form input[type="submit"] {
+        font-size: 120%;
+        color: #3d70a1;
+        background: #ffffff;
+        padding: 10px 55px 10px 55px;
+        margin-top: 20px;
+        border: 1px solid #3d70a1; }
+
+/*# sourceMappingURL=style1.css.map */

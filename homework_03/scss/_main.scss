@@ -1,0 +1,125 @@
+$content_background: null !default;
+
+@mixin headingMixin{
+	text-transform: uppercase;
+	text-align: left;
+	font-style: normal; 
+	padding: 10px 15px;
+	background: $table_header_background;
+	color: #000000;
+	}
+@mixin trMixin{
+	padding: 10px 15px;
+	text-indent: 20px;
+	border-color: #ffffff;
+	border-bottom: 5px solid #ffffff;	
+	}
+	
+@mixin tableRow($table_background){
+	background: $table_background;
+	tr {padding: 15px 15px;}
+	}
+	
+@mixin briefMixin($brief_background, $brief_text_color, $brief_floating, $width){ 
+	background-color: $brief_background;
+	color: $brief_text_color;
+	float: $brief_floating;
+	width: $width;
+	
+	}
+
+@mixin imgMixin($border_color){
+	border: 2px solid $border_color;
+	padding: 2px;
+	}
+
+
+body{
+	  background: $background;
+	  color: $text_color;
+	  
+#content {
+  width: 960px;
+  margin: 0 auto;
+  background: $content_background;
+  padding: 20px;
+  
+	h1{ 
+		text-transform: $heding_case;
+		color: $header_color;
+		text-align: center;
+	}
+	h2{ 
+		color: $header_color;
+	}
+	.img-left{
+		float: left;
+		margin: 0px 20px 10px 0px;
+		@include imgMixin($border_color);
+	} 
+	.brief {
+		margin: 0px 20px 10px 0px;
+		padding: 20px;
+		@include briefMixin($brief_background, $brief_text_color, $brief_floating, $width);
+	}
+	.img-right{
+		float: right;
+		margin: 0px 0px 5px 20px;
+		@include imgMixin($border_color);
+	}
+	 a:link{
+		color: $link_color;
+		}
+	table{
+		width: 900px;
+		height: 315px;
+		background: $table_background;
+		caption{
+			text-align: right;
+			color: #000000;
+			}
+		th{
+			@include headingMixin;
+			}
+		tr{	
+			@include trMixin;
+			}
+		}
+		.form {
+			color: $form_text_color;
+			.text_field {
+				span{
+					display: block;
+					margin-bottom: 5px;
+					}
+				display:inline-block;
+			}
+			p {
+				margin-top: 20px;
+				margin-bottom: 5px;
+				}
+			input[type = "email"] {
+				border: 1px solid $table_header_background;
+				padding: 5px;
+			}
+			input[type = "text"] {
+				
+				padding: 5px;
+			}
+			textarea {
+				color: $textarea_color;
+				padding: 5px;
+				}
+			input[type = "submit"]{
+				font-size: 120%;
+				color: $submit_color;
+				background: $content_background;
+				padding: 10px 55px 10px 55px;
+				margin-top: 20px;
+				border: 1px solid $submit_color;
+			}
+			
+		}
+	}
+}
+
