@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+/* href="http://fonts.googleapis.com/css?family=Open+Sans"*/
+
+body{
+	background: #b7c8d9;
+}
+	#content{
+		min-width: 900px;
+		margin: 0 auto;
+		background: #fff;
+	}
+	
+
+.banner, .two_columns, .four_columns, .footer, .signup{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.img_box{
+	display: flex;
+	flex-flow: cols wrap;
+	height: 700px;
+	background: #f3f3f3;
+	
+}
+
+.picture{
+	display: flex;
+	flex-flow: row wrap;
+	/*justify-content: spase-between;*/
+}
+
+.banner{
+	background-image: url(../img/apples.jpg);
+	background-repeat: no-repeat;
+	height: 740px;
+	background-size: 100%;/*cover*/
+	align-items: space-around;/*flex-start;*/
+}
+.logo{
+	margin-right: auto;	
+	color: #fff;
+	text-transform: uppercase;
+	flex: 1;
+	align-items: center;
+	
+}
+.banner	a{
+		margin: 20px;
+		color: #fff;
+		text-decoration: none;
+	}
+	
+.banner  a:hover{
+	text-decoration: underline;
+}
+	
+ header{
+	
+}
+/*	nav {
+		flex: 900px;
+		justify-content: flex-end;
+	}*/
+	.BandW{
+	flex: 2 2 300px;
+	justify-content: center;
+	align-items: center;
+	
+	}
+	.origin{
+		flex: 900px;
+		justify-content: center;
+		align-items: center;
+	}
+	.button{
+		flex: 200px;
+		justify-content: center;
+		align-self: flex-end;
+		
+	}
+	
+.two_columns{
+	justify-content: space-between;
+	margin: 100px;
+}
+.two_columns div{
+	flex: 1 1 250px;
+	margin: 40px;
+
+}
+.two_columns div:nth-child(2) p{
+	font-size: 0.7em;
+}
+	
+
+	
+.img_box div{
+	flex: 2 2 700px;
+
+}
+.img_box div:nth-child(1) p{
+	width: 100%;
+	text-align: center;
+}
+.picture div{
+	flex: 2 1 150px;
+}
+.picture div img{
+	max-height: 150px;
+	margin: 10px;
+	border: 5px;
+	border-color: #fff;
+}
+
+.four_columns{
+	justify-content: space-between;
+	margin: 100px;
+	font-family: Ariel;
+
+}
+
+
+
+.four_columns div{
+	flex: 1 1 150px;
+	margin: 20px;
+}
+.four_columns div p{
+	color: #9e9e9e;
+}
+
+.signup input [type = "email"]{
+	flex:1;
+	height: 30px;
+	background: #f3f3f3;
+	color:  #9e9e9e;
+}
+.signup input [type = "submit"]{
+	height: 30px;
+	padding: 0 10px;
+	background: #000;
+	color: #fff;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	margin: 100px;
+	padding-top: 10px;
+	border-top: 2px solid  #f3f3f3;
+}
+
+.footer div{
+	flex: 1;
+	align-self: flex-start;
+}
+.footer p{
+	color: #9e9e9e;
+}
+.footer nav a:hover{
+	text-decoration: underline;
+}
+.footer nav	a{
+		margin: 20px;
+		color: #000;
+		text-decoration: none;
+	}
+
+	
+
+
+
