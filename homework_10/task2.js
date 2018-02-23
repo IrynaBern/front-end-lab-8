@@ -32,49 +32,43 @@ function showResult(fighter) {
   console.log('- Properties:', fighter.getStats());
 }
 
-function fighter(fighter) 
-{
+function fighter(fighter){
     let Stats = fighter;
     let CombatHistory = {wins: 0, loses: 0};
     return {
-        getName: function()
-		{
-            return Stats.name;
-        },
-        block: function() 
-		{
-            return Math.random() < 0.5 ? false : true;
-        },
-        getCombatHistory: function() 
-		{
-            return CombatHistory;
-        },
-        getStats: function() 
-		{
-            return Stats;
-        },
-        fight: function(defender) 
-		{
-            if (defender.block())
+		getName: function(){
+			return Stats.name;
+		},
+		block: function(){
+			return Math.random() < 0.5 ? false : true;
+		},
+		getCombatHistory: function(){
+			return CombatHistory;
+			},
+		getStats: function(){
+			return Stats;
+		},
+		fight: function(defender){
+			if (defender.block())
 			{
                 return false;
             } 
 			let defenderStats = defender.getStats();
 			let defenderCombatHistory = defender.getCombatHistory();
-            let lossHp = defenderStats.hp - Stats.attack;
-            if (lossHp > 0) 
+			let lossHp = defenderStats.hp - Stats.attack;
+			if (lossHp > 0)
 			{
-                defender.getStats().hp = lossHp;
-            } 
+				defender.getStats().hp = lossHp;
+			} 
 			else 
 			{
-                CombatHistory.wins++;
-                defenderCombatHistory.loses++;
-                defenderStats.hp = 0;
-            }
-            return true;
+				CombatHistory.wins++;
+				defenderCombatHistory.loses++;
+				defenderStats.hp = 0;
+			}
+			return true;
 		}
-    };
+	};
 }
 
 /**
