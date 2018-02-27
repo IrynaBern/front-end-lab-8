@@ -1,0 +1,31 @@
+/* Your styles goes here */
+
+.list{
+    list-style-type: none;
+	display: block;
+}
+
+.list li:hover{
+	background-color: #C0C0C0;
+}
+
+.file p{
+	vertical-align: bottom;
+}
+.material-icons{
+	color: #FFBF00;
+	vertical-align: bottom;
+	margin-right: 10px;
+
+	}
+.collapse{
+	display: none;
+}
+
+.expand{
+	display: block;
+}
+.empty{
+	font-style: italic;
+	color: gray;
+}
